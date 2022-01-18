@@ -1,0 +1,97 @@
+.dashboard-header {
+  margin-top: 8.3rem;
+  margin-left: 26.4rem;
+  margin-bottom: 0.5rem;
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 60px;
+
+  color: #000000;
+}
+
+.dashboard-subheader {
+  margin-left: 26.4rem;
+
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.dashboard-card3-1-3-2-container {
+  margin-top: 36rem;
+  margin-left: 26.4rem;
+
+  /* border: 1px solid #dcdcdc; */
+  box-sizing: border-box;
+  display: flex;
+}
+
+.card3-2 {
+  width: 474px;
+  height: 231px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+
+  margin-left: 3rem;
+}
+
+.card3-1 {
+  width: 474px;
+  height: 231px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
+
+.dashboard-card3-3-3-4-container {
+  margin-top: 2.3rem;
+  margin-left: 26.4rem;
+
+  /* border: 1px solid #dcdcdc; */
+  box-sizing: border-box;
+  display: flex;
+}
+
+.card3-3 {
+  width: 474px;
+  height: 231px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
+
+.card3-4 {
+  width: 474px;
+  height: 231px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  margin-left: 3rem;
+}
+
+.hide-cards {
+  display: none;
+}
+
+.feedEnd {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 26.4rem;
+  margin-top: 7rem;
+  width: 64.2rem;
+}
+
+.feedEndText {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  /* identical to box height, or 106% */
+  align-self: center;
+}
