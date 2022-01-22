@@ -1,3 +1,18 @@
+.xyz:hover {
+  animation: bounce 1.2s;
+  cursor: pointer;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 button {
   cursor: pointer;
 }
@@ -17,7 +32,7 @@ button {
   font-size: 18px;
   align-items: center;
 }
-.crossImg{
+.crossImg {
   margin-left: 35vw;
 }
 .addyellow:hover {
@@ -399,21 +414,21 @@ button {
   text-decoration: none;
   color: inherit;
 }
-.logoTag{
+.logoTag {
   margin-left: 40rem;
 }
-.customiseBtn{
+.customiseBtn {
   margin-top: 2rem;
-  margin-left: 33rem 
+  margin-left: 33rem;
 }
-@media screen and (max-width: 1440px){
-  .crossImg{
+@media screen and (max-width: 1440px) {
+  .crossImg {
     margin-left: 28vw;
   }
-  .logoTag{
+  .logoTag {
     margin-left: 27rem;
   }
-  .customiseBtn{
+  .customiseBtn {
     margin-top: 2rem;
     margin-left: 22rem;
   }

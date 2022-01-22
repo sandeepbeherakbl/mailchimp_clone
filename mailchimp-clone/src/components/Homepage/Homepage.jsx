@@ -1,7 +1,11 @@
+
 import styles from "./Homepage.module.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import Footer from './Footer';
+import Resources from './Resources';
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function Homepage() {
   const [active1, setActive1] = useState(true);
   const [active2, setActive2] = useState(true);
@@ -14,7 +18,7 @@ export default function Homepage() {
       return setColor("transparent");
     }
   };
-  localStorage.setItem("CanpaignSubmit","false");
+  localStorage.setItem("CanpaignSubmit", "false");
   useEffect(() => {
     window.addEventListener("scroll", scrollevent);
     return () => window.removeEventListener("scroll", scrollevent);
@@ -27,8 +31,8 @@ export default function Homepage() {
           <div style={{ marginLeft: "3.5rem" }}>Resources</div>
           <div style={{ marginLeft: "3.5rem" }}>Inspiration</div>
           <div style={{ marginLeft: "4rem" }}>Pricing</div>
-          <div style={{ marginLeft: "23rem", marginTop: "-0.8rem" }}>
-            <img src="/logo1.png" />
+          <div style={{ marginLeft: "23rem", marginTop: "-0.8rem" }} className={styles.xyz}>
+            <img src="/logo1.png"/>
           </div>
           <div style={{ marginLeft: "-1rem" }}>
             <img src="/logo2.png" />
@@ -43,33 +47,37 @@ export default function Homepage() {
               marginTop: "-.8rem",
             }}
           >
-            <button
-              style={{
-                padding: "10.5px 31px",
-                fontWeight: "500",
-                fontStyle: "normal",
-                fontSize: "14px",
-                color: "#241C15",
-                lineHeight: "15px",
-                border: " 0.8px solid #241C15",
-                background: "transparent",
-              }}
-            >
-              Log In
-            </button>
+            <a href="https://mailchimpp.herokuapp.com/login">
+              <button
+                style={{
+                  padding: "10.5px 31px",
+                  fontWeight: "500",
+                  fontStyle: "normal",
+                  fontSize: "14px",
+                  color: "#241C15",
+                  lineHeight: "15px",
+                  border: " 0.8px solid #241C15",
+                  background: "transparent",
+                }}
+              >
+                Log In
+              </button>
+            </a>
           </div>
           <div style={{ marginLeft: "2rem", marginTop: "-1rem" }}>
-            <button
-              className={styles.navSingup}
-              style={{
-                padding: "12px 36px",
-                background: " #007C89",
-                color: "#FFF",
-                border: "none",
-              }}
-            >
-              <Link to="/signup">Sign Up</Link>
-            </button>
+            <a href="https://mailchimpp.herokuapp.com/register">
+              <button
+                className={styles.navSingup}
+                style={{
+                  padding: "12px 36px",
+                  background: " #007C89",
+                  color: "#FFF",
+                  border: "none",
+                }}
+              >
+                Sign Up
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -83,70 +91,17 @@ export default function Homepage() {
             advanced, yet easy-to-use marketing platform.
           </div>
           <div className={styles.leftthree}>
-            <button className={styles.btnleft}>
-              <Link to="/signup">Sign Up</Link>
-            </button>
+            <a href="https://mailchimpp.herokuapp.com/register">
+              <button className={styles.btnleft}>Sign Up</button>
+            </a>
             <div className={styles.com}>Compare Plans</div>
           </div>
         </div>
-        <div className={styles.mainright}>
-          <img src="/mainimg.png" />
+        <div className={styles.mainright} data-aos="fade-up" data-aos-duration="1200">
+          <img src="/mainimg.png" style={{width:"100%"}}/>
         </div>
       </div>
-      {active2 ? (
-        <div></div>
-        /*
-        <div className={styles.blackbar}>
-          <div style={{ width: "100%", display: "flex" }}>
-            <div
-              style={{
-                width: "90rem",
-                marginLeft: "1rem",
-                marginTop: "1.5rem",
-              }}
-            >
-              Our website stores cookies on your device and discloses
-              information in accordance with our Cookie Statement. Choose
-              “Customize Settings” to c to control ocookies. We may collect
-              certain aggregate and anonymized data from your browser
-              independent of your cookie preferences. Cookie Statement
-            </div>
-            <div className={styles.customiseBtn}>
-              <button
-                style={{
-                  height: "3.3rem",
-                  width: "19rem",
-                  background: "transparent",
-                  color: "#ffff",
-                  border: "1px solid  #ffff",
-                }}
-              >
-                Customise Settings
-              </button>
-            </div>
-            <div
-              style={{ marginLeft: "1.7rem", marginTop: "2.8rem" }}
-              onClick={() => setActive2(false)}
-            >
-              <img src="/cross.svg" />
-            </div>
-          </div>
-        </div>
-        */
-      ) : (
-        /*
-        <div className={styles.bluediv}>
-          <div style={{ marginTop: "2rem", margin: "0 auto" }}>
-            Mailchimp is being acquired by Intuit! Our Co-founder and CEO shared
-            the news with our customers.{" "}
-            <span style={{ color: "blue", textDecoration: "underline" }}>
-              Read here.
-            </span>
-          </div>
-        </div>
-        */
-       <div></div>
-      )}
+
       <div className={styles.Doit}>Do it all with Mailchimp</div>
       <div className={styles.audience}>
         Bring your audience data, marketing channels, and insights together so
@@ -170,8 +125,8 @@ export default function Homepage() {
           </div>
         </div>
         <div className={styles.slright}>
-          <div>
-            <img src="/flone.png" />
+          <div data-aos="fade-up" data-aos-duration="1200">
+            <img src="/flone.png" style={{width:"100%"}}/>
           </div>
         </div>
       </div>
@@ -191,11 +146,13 @@ export default function Homepage() {
           </div>
         </div>
         <div className={styles.slright}>
-          <div>
-            <img src="/frothy.png" />
+          <div data-aos="fade-up" data-aos-duration="1200">
+            <img src="/frothy.png" style={{width:"100%"}}/>
           </div>
         </div>
       </div>
+      <Resources/>
+      <Footer/>
     </div>
   );
 }
