@@ -2,9 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import { BlocksTab } from "../components/BlocksTab/BlocksTab";
 import { CreatingAnEmail } from "../components/CreatingAnEmail/CreatingAnEmail";
 import { DashboardMain } from "../components/Dashboard/DashboardMain";
-// import {Homepage} from "../components/Homepage"
-// import Campaigns from "../components/Campaigns"
-// import SignupPage from "../components/SignupPage/Signup"
 import Template from "../components/Template/Template";
 import FinalPage from "../components/FinalPages/Final";
 import Homepage from "../components/Homepage/Homepage";
