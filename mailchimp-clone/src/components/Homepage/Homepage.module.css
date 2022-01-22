@@ -29,7 +29,6 @@ button {
   position: sticky;
   padding-top: 0.5rem;
   top: 0rem;
-  /* border:1px solid black; */
   font-family: Graphik;
   font-weight: 500;
   font-size: 16px;
@@ -43,7 +42,6 @@ button {
   width: 55rem;
   height: 37.8rem;
   margin-left: 15rem;
-  /* border:1px solid black; */
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
@@ -51,7 +49,6 @@ button {
 .mainright {
   width: 44.7rem;
   height: 37.8rem;
-  /* border:1px solid black; */
   margin-top: 8rem;
 }
 .leftone {
@@ -149,7 +146,6 @@ button {
 }
 .secondlast {
   display: flex;
-  /* border:1px solid black; */
   width: 100rem;
   margin: 0 auto;
   height: 50rem;
@@ -168,7 +164,6 @@ button {
   line-height: 108.3%;
   letter-spacing: 0.005em;
   color: #241c15;
-  /* border:1px solid black; */
   margin-top: 15rem;
 }
 .slright {
@@ -226,7 +221,6 @@ button {
   position: sticky;
   padding-top: 0.1rem;
   top: 0rem;
-  /* border:1px solid black; */
   font-family: Graphik;
   font-weight: 500;
   font-size: 16px;
@@ -241,7 +235,6 @@ button {
   width: 55rem;
   height: 37.8rem;
   margin-left: 15rem;
-  /* border:1px solid black; */
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
@@ -249,7 +242,6 @@ button {
 .mainright {
   width: 44.7rem;
   height: 37.8rem;
-  /* border:1px solid black; */
   margin-top: 8rem;
 }
 .leftone {
@@ -346,7 +338,6 @@ button {
 }
 .secondlast {
   display: flex;
-  /* border:1px solid black; */
   width: 100rem;
   margin: 0 auto;
   height: 50rem;
@@ -365,7 +356,6 @@ button {
   line-height: 108.3%;
   letter-spacing: 0.005em;
   color: #241c15;
-  /* border:1px solid black; */
   margin-top: 15rem;
 }
 .slright {
