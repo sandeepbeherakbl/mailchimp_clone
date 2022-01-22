@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 0.5% 32% 67.5%;
+        height: auto;
+
+    }
+
+    .griditoms{
+        height: auto;
+    }
+
+    .first{
+        background-color: yellow;
+    }
+
+    .second {
+                margin-top: 10px;
+
+    }
+
+    .check{
+        margin-left: 80px;
+    }
+
+    .btnn{
+        background-color: #007C89;
+        color: rgb(255, 255, 255);
+    }
+
+    .loginbox{
+        margin-right: ;
+        margin-top:;
+    }
+
+</style>
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div class="griditoms first"></div>
+       <div class="griditoms">
+                       <img src="https://login.mailchimp.com/release/1.1.1c3e679e8383c80acf84d1c602a85c6c29ae7b76f/images/brand_assets/logos/mc-freddie-dark.svg" width="40px" height="40px"/>
+                       <h1>Log In</h1>
+                       <p>Need a Mailchimp account? Create an account</p>
+                       <div class="loginbox">
+<div>
+                    <form class="form-signin" action="/login" method="POST">
+                    <p>Email</p>
+                        <input type="email" class="form-control" placeholder="Email" required name="email"
+                            autocomplete="on">
+                            <p>Password</p>
+                        <input type="password" class="form-control" placeholder="Password" required name="password">
+                        <button class="btn btn-lg btnn btn-block" type="submit">
+                            Log in</button>
+                        <label class="checkbox pull-left mt-3 check">
+                            <input type="checkbox" value="remember-me">
+                            Keep me logged in
+                        </label>
+                    </form>
+                </div>
+                <p class="text-center">Forgot Email ? . Forgod Password ?</p>
+                <a href="/register" class="text-center new-account">Create an account </a>
+</div>
+                       
+       </div>
+        <div class="griditoms">
+            <img src="https://user-images.githubusercontent.com/91533131/150535944-de917305-f867-480d-b2d9-a31e2387cd23.png" width="100%"/>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
