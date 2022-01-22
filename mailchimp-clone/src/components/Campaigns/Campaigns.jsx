@@ -1,4 +1,4 @@
-import { Navbar } from "./Dashboard/Navbar";
+import { Navbar } from "../Dashboard/Navbar";
 import styles from "./Campaigns.module.css";
 import { useState } from "react";
 import CampaignsSelectTab from "./CampaignsSelectTab";
