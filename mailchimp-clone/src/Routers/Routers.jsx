@@ -6,6 +6,7 @@ import Template from "../components/Template/Template";
 import FinalPage from "../components/FinalPages/Final";
 import Homepage from "../components/Homepage/Homepage";
 import Campaigns from "../components/Campaigns/Campaigns";
+import Error from "../components/Error/Error";
 
 export default function Routers() {
   return (
@@ -19,7 +20,7 @@ export default function Routers() {
         <Route path="/blocktab" element={<BlocksTab />}></Route>
         <Route path="/finalSubmit" element={<FinalPage />}></Route>
 
-        <Route path="*" element={<h1>Error 404</h1>}></Route>
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </div>
   );
