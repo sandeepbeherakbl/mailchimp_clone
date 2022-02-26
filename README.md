@@ -24,7 +24,7 @@ Mailchimp is an all-in-one Marketing Platform for small business. Which empower 
 5. Email Design page.
 6. Cool Email Template Page
 
-## Glimes Of my project
+## Glimps Of my project
 
 1. Landing Page
 
